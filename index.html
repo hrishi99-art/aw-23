@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lonely Aesthetic Literature</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0a0a0f, #1a1a1d);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(10, 10, 15, 0.9);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      backdrop-filter: blur(5px);
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .hero {
+      height: 75vh;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #ff4081;
+      text-shadow: 0 0 15px #ff4081;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #ccc;
+      line-height: 1.5;
+      max-width: 500px;
+      font-style: italic;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #ddd;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .sub-section {
+      margin-bottom: 40px;
+    }
+
+    .sub-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #aaa;
+      border-left: 5px solid #ff4081;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #1e1e24;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 20px rgba(255, 64, 129, 0.6);
+      background-color: #2a2a33;
+    }
+
+    /* Login Box */
+    .login-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+      animation: popUp 1s ease-in-out;
+    }
+
+    .login-box h3 {
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255,255,255,0.07);
+      color: #fff;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background-color: #ff5b95;
+    }
+
+    .login-box a {
+      color: #bbb;
+      font-size: 0.9rem;
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* Animation */
+    @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Lonely Lit</h2>
+    <nav>
+      <a href="#golpo">গল্প</a>
+      <a href="#kobita">কবিতা</a>
+      <a href="#uponnas">উপন্যাস</a>
+      <a href="#login">লগইন</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>PRITY HRISHI</h1>
+    <p>গল্পগুলো যেগুলো ছুঁয়ে যায় হৃদয়<br/>
+       স্বপ্নগুলো শব্দে গড়ে তোলা<br/>
+       যেখানে কবিতা ও গদ্য মিলিত হয়</p>
+  </section>
+
+  <section class="section" id="golpo">
+    <h2>গল্প</h2>
+
+    <div class="sub-section">
+      <h3>Free গল্প</h3>
+      <div class="card">গল্প ১: নির্জন সন্ধ্যা</div>
+      <div class="card">গল্প ২: হারিয়ে যাওয়া চিঠি</div>
+    </div>
+
+    <div class="sub-section">
+      <h3>Paid গল্প</h3>
+      <div class="card">গল্প ৩: অন্ধকারের আলো</div>
+      <div class="card">গল্প ৪: শেষ পর্ব</div>
+    </div>
+  </section>
+
+  <section class="section" id="kobita">
+    <h2>কবিতা</h2>
+
+    <div class="sub-section">
+      <h3>Free কবিতা</h3>
+      <div class="card">কবিতা ১: ছায়ার কষ্ট</div>
+      <div class="card">কবিতা ২: একাকীত্বের নদী</div>
+    </div>
+
+    <div class="sub-section">
+      <h3>Paid কবিতা</h3>
+      <div class="card">কবিতা ৩: অমাবস্যার গান</div>
+      <div class="card">কবিতা ৪: রাতের নিশ্বাস</div>
+    </div>
+  </section>
+
+  <section class="section" id="uponnas">
+    <h2>উপন্যাস</h2>
+
+    <div class="sub-section">
+      <h3>Free উপন্যাস</h3>
+      <div class="card">উপন্যাস ১: মেঘে ঢাকা সময়</div>
+      <div class="card">উপন্যাস ২: তারা হারানো রাত</div>
+    </div>
+
+    <div class="sub-section">
+      <h3>Paid উপন্যাস</h3>
+      <div class="card">উপন্যাস ৩: অন্ধকারের রাজত্ব</div>
+      <div class="card">উপন্যাস ৪: শেষ নিশীথ</div>
+    </div>
+  </section>
+
+  <section class="section" id="login">
+    <div class="login-box">
+      <h3>একাউন্টে লগইন করুন</h3>
+      <input type="email" placeholder="Gmail ID" />
+      <input type="password" placeholder="Password" />
+      <button>Sign In</button>
+      <a href="#">Forget Password?</a>
+      <a href="#">Don't have an account? Register</a>
+    </div>
+  </section>
+</body>
+</html>
+
